@@ -13,10 +13,11 @@
         <ion-label>Bolachas</ion-label>
       </ion-list-header>
 
-      <ion-item *ngFor="let bolachas of dadosPagina" href="https://ionicframework.com/docs/">
+      <ion-item *ngFor="let bolachas of dadosPagina">
+        
         <ion-icon slot="start" color="medium" name="book"></ion-icon>
         <ion-label>{{bolachas.nome}}</ion-label>
-        <ion-label>{{bolachas.nota}}</ion-label>
+        <ion-badge slot="end">{{bolachas.nota}}</ion-badge>
       </ion-item>
       
     </ion-list>
