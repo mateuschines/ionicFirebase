@@ -21,6 +21,6 @@ export class Tab1Page implements OnInit {
   }
 
   atualizar(){
-    this.dadosPagina = this.service.dados;
+    this.service.carregaDados(()=>this.dadosPagina = this.service.dados);
   }
 }
